@@ -1,0 +1,40 @@
+:root {
+    --primary: #064e3b;
+    --accent: #d97706;
+    --background: #ffffff;
+    --surface: #f9fafb;
+    --text-main: #111827;
+    --text-muted: #4b5563;
+    --border: #e5e7eb;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: var(--background); color: var(--text-main); }
+h1, h2, h3, .font-outfit { font-family: 'Outfit', sans-serif; }
+
+nav { background: white; border-bottom: 1px solid var(--border); padding: 1.25rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+.brand { font-weight: 800; font-size: 1.5rem; color: var(--primary); text-decoration: none; }
+.brand span { color: var(--accent); }
+
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; }
+
+.cta-button { background: var(--primary); color: white !important; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; text-decoration: none; display: inline-block; cursor: pointer; }
+
+.hero { padding: 6rem 5%; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.hero h1 { font-size: 4rem; color: var(--primary); }
+.hero-image { border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+.hero-image img { width: 100%; object-fit: cover; }
+
+.section { padding: 6rem 5%; text-align: center; }
+.section-title { font-size: 2.5rem; margin-bottom: 3rem; color: var(--primary); }
+
+.grid-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.service-card { background: var(--surface); padding: 3rem 2rem; border-radius: 20px; border: 1px solid var(--border); }
+
+.whatsapp-widget { background: white; border-radius: 20px; padding: 2rem; max-width: 450px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.1); text-align: left; }
+.chat-bubble { background: #f3f4f6; padding: 1rem; border-radius: 12px; margin-bottom: 1rem; width: fit-content; }
+
+.reviews-banner { background: var(--primary); color: white; padding: 4rem 5%; border-radius: 20px; margin: 4rem 5%; }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Sabrinsky Flores | Clínica Dental y Estética - Santo Domingo</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="brand">Sabrinsky<span>Flores</span></a>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#agendar" class="cta-button">Agendar Cita</a>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="font-outfit">Sonríe con <span style="color: var(--accent);">confianza.</span></h1>
+            <p>Atención dental personalizada, tecnología digital avanzada y resultados naturales en el corazón de Santo Domingo.</p>
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="#agendar" class="cta-button">Agendar Cita Ahora</a>
+                <a href="https://wa.me/8095969133" target="_blank" class="cta-button" style="background: transparent; color: var(--primary) !important; border: 2px solid var(--primary);">WhatsApp</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2070">
+        </div>
+    </section>
+
+    <section class="reviews-banner">
+        <div style="font-size: 3rem; color: #fcd34d;">★★★★★</div>
+        <h2 class="font-outfit" style="color: white; font-size: 2.25rem;">5.0 Estrellas | 198 Reseñas en Google</h2>
+    </section>
+
+    <section id="servicios" class="section">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="grid-services">
+            <div class="service-card"><h3>Limpieza Dental</h3><p>Higiene profesional indolora.</p></div>
+            <div class="service-card"><h3>Estética</h3><p>Diseño de sonrisa avanzado.</p></div>
+            <div class="service-card"><h3>Radiografía</h3><p>Diagnóstico de precisión.</p></div>
+        </div>
+    </section>
+
+    <section id="agendar" class="section" style="background: var(--surface);">
+        <h2 class="section-title">Agenda en <span style="color: var(--accent);">segundos.</span></h2>
+        <div class="whatsapp-widget">
+            <div style="background: var(--primary); color: white; padding: 1.2rem; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;">
+                <p style="font-weight: 600;">Asistente Sabrinsky Flores AI</p>
+            </div>
+            <div id="chat-box" style="height: 250px; overflow-y: auto;">
+                <div class="chat-bubble">¡Hola! 👋 ¿En qué tratamiento estás interesado?</div>
+            </div>
+            <div style="display: flex; margin-top: 1.5rem; gap: 1rem;">
+                <input type="text" id="chat-input" placeholder="Mensaje..." style="flex: 1; padding: 1rem; border-radius: 8px; border: 1px solid var(--border);">
+                <button onclick="handleChat()" class="cta-button" style="border: none;">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>
